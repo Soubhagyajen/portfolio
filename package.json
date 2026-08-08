@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Machine Learning Developer Portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'No build step required for static HTML'"
+  },
+  "keywords": [
+    "portfolio",
+    "machine-learning",
+    "ai"
+  ],
+  "author": "Soubhagya",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
