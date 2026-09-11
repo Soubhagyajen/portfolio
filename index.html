@@ -34,6 +34,11 @@
         /* Accent gradient utility */
         .accent-gradient { background: linear-gradient(135deg, #ea580c, #f97316, #fb923c); }
         .accent-text { background: linear-gradient(135deg, #ea580c, #f97316, #fb923c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .brand-mark { position: relative; display: inline-flex; align-items: center; gap: 0.55rem; letter-spacing: -0.06em; }
+        .brand-mark::before { content: ''; width: 2rem; height: 2rem; border-radius: 0.7rem; background: linear-gradient(145deg, #fb923c, #c2410c); box-shadow: 0 0 24px rgba(249,115,22,0.35); transform: rotate(-8deg); }
+        .brand-mark::after { content: 'S'; position: absolute; left: 0.65rem; top: 0.1rem; color: #fff; font-size: 1rem; font-weight: 900; letter-spacing: -0.08em; }
+        .brand-word { font-size: 1.1rem; font-weight: 800; letter-spacing: -0.05em; }
+        .brand-dot { color: #fb923c; }
         .gradient-border { position: relative; border: 1px solid transparent; background-clip: padding-box; }
         .gradient-border::before { content: ''; position: absolute; inset: -1px; border-radius: inherit; padding: 1px; background: linear-gradient(135deg, #ea580c, #f97316, #fb923c); -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none; }
 
@@ -103,7 +108,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
             <!-- Logo -->
-            <a href="#hero" class="text-xl font-bold accent-text" aria-label="Home">S<span class="text-white/80">.</span>dev</a>
+            <a href="#hero" class="brand-mark" aria-label="S.dev home"><span class="brand-word text-white">S<span class="brand-dot">.</span>dev</span></a>
             <!-- Desktop Links -->
             <div class="hidden md:flex items-center gap-8">
                 <a href="#about" class="text-sm text-white/60 hover:text-white transition-colors duration-300">About</a>
@@ -289,7 +294,38 @@
                 </div>
             </div>
 
-            <!-- Project Card 2: Crop Disease Detection -->
+            <!-- Project Card 2: Personal Services Website -->
+            <div class="project-card glass rounded-2xl overflow-hidden group reveal" role="article">
+                <div class="relative h-52 overflow-hidden">
+                    <div class="project-img w-full h-full flex items-center justify-center bg-gradient-to-br from-cyan-950 via-slate-900 to-black">
+                        <div class="text-center px-6">
+                            <i class="fa-solid fa-handshake-angle text-5xl text-cyan-300/80 mb-4" aria-hidden="true"></i>
+                            <p class="text-xs font-mono uppercase tracking-[0.3em] text-white/60">Personal services</p>
+                        </div>
+                    </div>
+                    <div class="project-overlay absolute inset-0 bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center p-6 text-center">
+                        <span class="text-xs font-mono accent-text uppercase tracking-widest mb-2">Personal Work</span>
+                        <p class="text-white/90 text-sm font-semibold mb-1">Services & Solutions</p>
+                        <p class="text-white/50 text-xs leading-relaxed">A personal website that introduces my services and gives visitors a clear way to explore how I can help.</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-start justify-between gap-3 mb-2">
+                        <h3 class="text-lg font-bold text-white">Personal Services</h3>
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-cyan-200 border border-cyan-200/30 rounded-full px-2 py-1">Personal</span>
+                    </div>
+                    <p class="text-white/50 text-sm mb-4 leading-relaxed">A focused service website where I present the digital, AI, and development solutions I provide.</p>
+                    <div class="flex flex-wrap gap-2 mb-5">
+                        <span class="text-xs font-mono bg-white/5 rounded-lg px-3 py-1 text-cyan-300">Personal Brand</span>
+                        <span class="text-xs font-mono bg-white/5 rounded-lg px-3 py-1 text-cyan-300">Web Development</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://vidyarthi.soubhagyajena834.workers.dev" target="_blank" rel="noopener noreferrer" class="gradient-border rounded-lg px-4 py-1.5 text-xs font-semibold text-white/80 hover:text-white transition-colors">View Website <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3: Crop Disease Detection -->
             <div class="project-card glass rounded-2xl overflow-hidden group reveal" role="article">
                 <div class="relative h-52 overflow-hidden">
                     <img src="/crop-disease-detection.png" alt="AI-assisted crop disease detection visual showing a diseased leaf with computer vision markers" class="project-img w-full h-full object-cover" loading="lazy">
