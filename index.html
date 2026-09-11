@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Machine Learning Developer Portfolio — Expert in Python, TensorFlow, Deep Learning, and AI-driven solutions. Explore projects, skills, and connect.">
+    <meta name="description" content="Soubhagya's machine learning portfolio featuring AI projects, the Rep Pvt Ltd corporate website, and part-time machine learning tutoring experience.">
     <meta name="keywords" content="Machine Learning, AI, Deep Learning, Python, TensorFlow, Portfolio, Data Science">
     <meta name="author" content="Soubhagya">
     <title>Soubhagya | ML Developer Portfolio</title>
@@ -108,6 +108,7 @@
             <div class="hidden md:flex items-center gap-8">
                 <a href="#about" class="text-sm text-white/60 hover:text-white transition-colors duration-300">About</a>
                 <a href="#projects" class="text-sm text-white/60 hover:text-white transition-colors duration-300">Projects</a>
+                <a href="#experience" class="text-sm text-white/60 hover:text-white transition-colors duration-300">Experience</a>
                 <a href="#contact" class="text-sm text-white/60 hover:text-white transition-colors duration-300">Contact</a>
                 <a href="https://github.com/Soubhagyajen" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors" aria-label="GitHub Profile"><i class="fa-brands fa-github text-lg"></i></a>
                 <a href="https://www.linkedin.com/in/soubhagya-jena-a02043253" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin text-lg"></i></a>
@@ -123,6 +124,7 @@
         <div class="px-6 py-4 space-y-3">
             <a href="#about" @click="mobileNav = false" class="block text-white/60 hover:text-white transition-colors">About</a>
             <a href="#projects" @click="mobileNav = false" class="block text-white/60 hover:text-white transition-colors">Projects</a>
+            <a href="#experience" @click="mobileNav = false" class="block text-white/60 hover:text-white transition-colors">Experience</a>
             <a href="#contact" @click="mobileNav = false" class="block text-white/60 hover:text-white transition-colors">Contact</a>
         </div>
     </div>
@@ -331,7 +333,65 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Project Card 4: Rep Pvt Ltd -->
+            <div class="project-card glass rounded-2xl overflow-hidden group reveal" role="article">
+                <div class="relative h-52 overflow-hidden">
+                    <div class="project-img w-full h-full flex items-center justify-center bg-gradient-to-br from-orange-950 via-slate-900 to-black">
+                        <div class="text-center px-6">
+                            <i class="fa-solid fa-building text-5xl text-orange-400/80 mb-4" aria-hidden="true"></i>
+                            <p class="text-xs font-mono uppercase tracking-[0.3em] text-white/60">Corporate website</p>
+                        </div>
+                    </div>
+                    <div class="project-overlay absolute inset-0 bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center p-6 text-center">
+                        <span class="text-xs font-mono accent-text uppercase tracking-widest mb-2">Project Deep Dive</span>
+                        <p class="text-white/90 text-sm font-semibold mb-1">Corporate Web Presence</p>
+                        <p class="text-white/50 text-xs leading-relaxed">A professional corporate website created for Rep Pvt Ltd to present its business, services, and brand online.</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-white mb-2">Rep Pvt Ltd</h3>
+                    <p class="text-white/50 text-sm mb-4 leading-relaxed">Corporate website designed and developed to give Rep Pvt Ltd a clear, credible, and professional digital presence.</p>
+                    <div class="flex flex-wrap gap-2 mb-5">
+                        <span class="text-xs font-mono bg-white/5 rounded-lg px-3 py-1 text-orange-300">Web Development</span>
+                        <span class="text-xs font-mono bg-white/5 rounded-lg px-3 py-1 text-orange-300">Corporate Website</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://www.reppvtltd.com" target="_blank" rel="noopener noreferrer" class="gradient-border rounded-lg px-4 py-1.5 text-xs font-semibold text-white/80 hover:text-white transition-colors">Visit Website <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- EXPERIENCE SECTION — Teaching                  -->
+<!-- ============================================ -->
+<section id="experience" class="relative py-24 lg:py-32" aria-label="Professional experience">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+            <p class="text-sm font-mono uppercase tracking-widest accent-text mb-3">Experience</p>
+            <h2 class="text-3xl md:text-5xl font-bold text-white">Teaching & <span class="accent-text">Mentorship</span></h2>
+        </div>
+
+        <article class="glass rounded-2xl p-8 md:p-10 reveal max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-start gap-6">
+                <div class="w-16 h-16 rounded-2xl accent-gradient flex items-center justify-center flex-shrink-0">
+                    <i class="fa-solid fa-chalkboard-user text-2xl text-white" aria-hidden="true"></i>
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-4">
+                        <div>
+                            <p class="text-sm font-mono uppercase tracking-widest accent-text mb-2">Part-time Tutor</p>
+                            <h3 class="text-2xl font-bold text-white">Superprof</h3>
+                        </div>
+                        <span class="text-sm text-white/40 font-mono">Machine Learning</span>
+                    </div>
+                    <p class="text-white/60 leading-relaxed">Provided one-to-one machine learning tutoring to an IIT M.Tech student, helping translate advanced concepts into practical understanding through focused guidance and problem solving.</p>
+                </div>
+            </div>
+        </article>
     </div>
 </section>
 
